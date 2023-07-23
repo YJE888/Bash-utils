@@ -46,4 +46,6 @@ curl -X DELETE \
   -H "authorization: Basic ${AUTH}" \
   -H "X-Harbor-CSRF-Token: ${TOKEN}"
 
+# pushed popd 사용 테스트 필요함
+# pushed popd 를 테스트 후 상단에서 만든 /harbor-repo/${NS} 디렉토리 삭제 필요
 exit 0
