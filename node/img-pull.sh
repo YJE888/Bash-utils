@@ -1,5 +1,5 @@
 #!/bin/bash
-# 노드에서 여러 개의 이미지를 다운 받고 싶을 때 사용하는 스크립트
+# 노드에서 여러 개의 이미지를 다운 받고 싶을 때 사용
 # /root/repo/ 디렉토리에 harbor password가 입력된 my_password.txt 파일이 필요함
 # 하단의 images에 다운 받아야될 이미지들 기입 ex) "test-repo.com/test/python:3.6"
 images=("{{ #harbor-domain_입력/project명/이미지명/태그 }}" "{{ #harbor-domain_입력/project명/이미지명/태그 }}" "..." "...")
