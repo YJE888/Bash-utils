@@ -1,5 +1,12 @@
 #!/bin/bash
-
+# ./pre-install.sh hostname 으로 사용
+# 호스트네임 세팅, 방화벽 중지, python3 설치, ntp 동기화, 도커 설치를 통해 ceph cluster 구축 전 사전 설치를 진행함
+# Ansible-utils에서 사전 설치 ansible로도 가능
+if [ $1 = "-h" ] || [ $1 = "--help" ]
+then
+        echo -e "Usage : ./pre-install.sh {hostname}"
+        exit 2
+fi
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
