@@ -18,6 +18,14 @@
   done
   ```
   <br/>
+- 배열 선언
+  ```
+  my_array=("apple" "banana" "cherry")
+  for item in "${my_array[@]}"; do
+    echo $item
+  done
+  ```
+  <br/>
 - 1부터 100까지의 숫자 출력
   ```
   for mission in {0..100}
